@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { Header } from "./components/Header";
 import { IRoute } from "./interfaces";
 import { LandingPage } from "./pages/LandingPage";
@@ -19,7 +20,7 @@ export function App() {
   return (
     <>
       <Header links={links} />
-      <LandingPage />
+      <Outlet />
     </>
   );
 }
