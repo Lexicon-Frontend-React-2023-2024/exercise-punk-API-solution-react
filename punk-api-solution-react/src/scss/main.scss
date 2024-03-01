@@ -3,4 +3,10 @@
 @use "./base/utilities";
 
 // ########## components ##########
+@use "./components/Beer";
+@use "./components/Figure";
 @use "./components/Header";
+
+// ########## pages ##########
+@use "./pages/BeerInfoPage";
+@use "./pages/LandingPage";

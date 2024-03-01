@@ -1,0 +1,68 @@
+@use "../abstracts/colors" as *;
+
+#landing-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#landing-page section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#landing-page section article {
+  background-color: $white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px 5px $blue_shadow;
+  color: $black;
+  min-height: 380px;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  position: relative;
+  transition-duration: 400ms;
+  transition-property: background-color, box-shadow;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#landing-page section article:hover {
+  box-shadow: 0 0 10px 10px $blue_shadow;
+}
+
+#landing-page section article.loading {
+  align-items: center;
+  background-color: $black;
+  justify-content: center;
+}
+#landing-page section article.loading.white-bg {
+  background-color: $white;
+}
+
+#landing-page section article.loading .loader {
+  width: 100px;
+}
+
+#landing-page footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#landing-page footer .generate-random-beer {
+  background-color: $blue;
+  border: none;
+  border-radius: 0.5rem;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-block: 0.8rem;
+  width: 300px;
+}

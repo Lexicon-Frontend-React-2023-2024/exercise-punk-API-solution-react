@@ -1,0 +1,19 @@
+@use "../abstracts/colors" as *;
+
+.random-beer-content .beer-name {
+  border-bottom: 2px solid $black;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.random-beer-content .see-more {
+  align-items: center;
+  display: flex;
+
+  position: absolute;
+  left: var(--padding-inline);
+  bottom: var(--padding-block);
+
+  cursor: pointer;
+}
